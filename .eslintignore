@@ -1,0 +1,8 @@
+/node_modules/*
+/public/*
+/dist/*
+.eslintrc.js
+.eslintcache
+stylelint.config.js
+commitlint.config.js
+vite.config.ts

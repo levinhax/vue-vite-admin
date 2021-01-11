@@ -1,4 +1,4 @@
-const config = {
+module.exports = {
   root: true,
   plugins: ['stylelint-order'],
   extends: ['stylelint-config-standard', 'stylelint-config-prettier'],
@@ -19,5 +19,3 @@ const config = {
     'order/properties-order': [],
   },
 }
-
-export default config

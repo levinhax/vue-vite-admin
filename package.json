@@ -18,6 +18,7 @@
     ]
   },
   "dependencies": {
+    "ant-design-vue": "^2.0.0-rc.8",
     "vue": "^3.0.5"
   },
   "devDependencies": {

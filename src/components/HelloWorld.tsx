@@ -1,5 +1,6 @@
 // import * as vue from 'vue' // 已配置插件 @vitejs/plugin-vue-jsx
-import { defineComponent, ref } from 'vue'
+import { defineComponent, ref, onMounted } from 'vue'
+import { getEnv } from '../utils/env'
 
 // const React = { createElement: vue.h, Fragment: vue.Fragment } // 已配置插件 @vitejs/plugin-vue-jsx
 
@@ -13,6 +14,12 @@ export default defineComponent({
   },
   setup(prop) {
     const count = ref(0)
+
+    onMounted(() => {
+      const envVariables = getEnv()
+      console.log(`Env Variables and Modes: ${envVariables}`)
+    })
+
     return () => (
       <>
         <h1>{prop.msg}</h1>

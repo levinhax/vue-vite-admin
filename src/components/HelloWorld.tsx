@@ -1,7 +1,7 @@
-import * as vue from 'vue'
+// import * as vue from 'vue' // 已配置插件 @vitejs/plugin-vue-jsx
 import { defineComponent, ref } from 'vue'
 
-const React = { createElement: vue.h, Fragment: vue.Fragment }
+// const React = { createElement: vue.h, Fragment: vue.Fragment } // 已配置插件 @vitejs/plugin-vue-jsx
 
 export default defineComponent({
   name: 'HelloWorld',

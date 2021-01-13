@@ -1,12 +1,11 @@
 import { defineComponent } from 'vue'
-import { RouterView } from 'vue-router'
 
 export default defineComponent({
-  name: 'App',
+  name: 'WorkBenchTodo',
   setup() {
     return () => (
       <>
-        <RouterView />
+        <h1>这是 工作台-Todo 页面.</h1>
       </>
     )
   },

@@ -18,13 +18,14 @@ export default defineConfig({
   // 例如我们要在 vite 中使用 lodash，只需要在 vite.config.js （vite 配置文件）中，配置 optimizeDeps 对象，在 include 数组中添加 lodash
   //   include: ['lodash'],
   // },
-  // optimizeDeps: {
-  //   include: ['axios', 'nprogress', 'mockjs']
-  // },
+  optimizeDeps: {
+    // include: ['axios', 'nprogress', 'mockjs']
+    include: ['@ant-design/icons-vue']
+  },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `$injectedColor: orange;`
+        additionalData: `$injectedColor: #fff;`
       }
     }
   },

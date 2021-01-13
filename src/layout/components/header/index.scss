@@ -1,0 +1,34 @@
+.basic-layout-header-wrapper {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  overflow: hidden;
+
+  .head-collapsed-icon {
+    cursor: pointer;
+  }
+
+  .rightBox {
+    display: flex;
+    flex: auto;
+    justify-content: flex-end;
+    color: #fff;
+
+    .userhead {
+      padding: 0 20px;
+      margin-right: 4px;
+      cursor: pointer;
+      font-size: 20px;
+      .username {
+        font-size: 14px;
+        margin-left: 8px;
+      }
+    }
+
+    .all_center {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

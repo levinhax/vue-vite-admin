@@ -1,6 +1,6 @@
 // import * as vue from 'vue' // 已配置插件 @vitejs/plugin-vue-jsx
 import { defineComponent, onMounted, ref, computed } from 'vue'
-import { useStore, mapGetters } from 'vuex'
+import { useStore } from 'vuex'
 import { Button } from 'ant-design-vue'
 import './index.scss'
 import Logo from '../../assets/logo.png'

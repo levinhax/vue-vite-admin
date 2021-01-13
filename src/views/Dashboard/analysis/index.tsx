@@ -1,12 +1,11 @@
 import { defineComponent } from 'vue'
-import { RouterView } from 'vue-router'
 
 export default defineComponent({
-  name: 'App',
+  name: 'Analysis',
   setup() {
     return () => (
       <>
-        <RouterView />
+        <h1>这是 工作台-分析 页面.</h1>
       </>
     )
   },

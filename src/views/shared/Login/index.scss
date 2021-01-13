@@ -1,0 +1,36 @@
+@import '../../../styles/variable.scss';
+
+.login-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 210px;
+  background-color: $userLayoutBg;
+  background-size: cover;
+
+  .login-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    .svg-icon {
+      font-size: 48px;
+    }
+
+    img {
+      height: 48px;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      margin-left: 10px;
+      color: #fff;
+    }
+  }
+
+  .login-content {
+    width: 400px;
+  }
+}

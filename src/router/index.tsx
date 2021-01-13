@@ -1,16 +1,38 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import shared from './modules/shared'
+import common from './common'
 
-const routes: RouteRecordRaw[] = [
+export const routes: RouteRecordRaw[] = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import('../views/Home'),
+    name: 'Layout',
+    redirect: '/home',
+    meta: {
+      title: '首页',
+    },
+    component: () => import('../layout/index.vue'),
+    children: [
+      // 基础路由 不用权限 home about ...common
+      {
+        path: '/home',
+        name: 'home',
+        meta: {
+          title: '首页',
+        },
+        component: () => import('../views/Home'),
+      },
+      {
+        path: '/about',
+        name: 'About',
+        meta: {
+          title: '关于',
+        },
+        component: () => import('../views/About'),
+      },
+      ...common,
+    ],
   },
-  {
-    path: '/about',
-    name: 'About',
-    component: () => import('../views/About'),
-  },
+  ...shared,
 ]
 
 const router = createRouter({

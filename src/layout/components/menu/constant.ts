@@ -17,10 +17,9 @@ export const menuData = [
     path: '/home',
     meta: {
       title: '首页',
-      icon: 'icon-account',
+      icon: 'DashboardOutlined',
       hidden: false,
-    },
-    children: []
+    }
   },
   {
     key: '2',
@@ -28,7 +27,7 @@ export const menuData = [
     path: '/dashboard',
     meta: {
       title: '概览',
-      // icon: 'DashboardOutlined', // https://demo.com/icon.png or <Icon type="dashboard" />
+      // icon: 'MailOutlined',
       icon: 'icon-account',
       hidden: false,
     },
@@ -39,7 +38,7 @@ export const menuData = [
         path: '/dashboard/workbench',
         meta: {
           title: '工作台',
-          icon: 'dashboard',
+          icon: '',
           hidden: false,
         },
       },
@@ -49,7 +48,7 @@ export const menuData = [
         path: '/dashboard/workbench-todo',
         meta: {
           title: '待做事项',
-          icon: 'dashboard',
+          icon: '',
           hidden: false,
         },
       },
@@ -59,7 +58,7 @@ export const menuData = [
         path: '/dashboard/analysis',
         meta: {
           title: '分析页',
-          icon: 'dashboard',
+          icon: '',
           hidden: false,
         },
       },

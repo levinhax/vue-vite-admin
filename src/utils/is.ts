@@ -34,3 +34,24 @@ export function isString(val: unknown): val is string {
 export function isBoolean(val: unknown): val is boolean {
   return is(val, 'Boolean')
 }
+
+/**
+ * @description:  是否为Object类型
+ */
+export function isObject(val: unknown): val is Record<string, unknown> {
+  return val !== null && is(val, 'Object')
+}
+
+/**
+ * @description:  是否为Function类型
+ */
+export function isFunction<T = unknown>(val: unknown): val is T {
+  return typeof val === 'function'
+}
+
+/**
+ * @description:  是否为promise
+ */
+export function isPromise<T = unknown>(val: unknown): val is Promise<T> {
+  return is(val, 'Promise') && isObject(val) && isFunction(val.then) && isFunction(val.catch)
+}

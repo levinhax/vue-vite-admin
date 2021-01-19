@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "ant-design-vue": "^2.0.0-rc.8",
+    "axios": "^0.21.1",
     "vue": "^3.0.5",
     "vue-router": "^4.0.3",
     "vuex": "^4.0.0-rc.2"
@@ -43,6 +44,7 @@
     "eslint-plugin-vue": "^7.4.1",
     "husky": "^4.3.7",
     "lint-staged": "^10.5.3",
+    "lodash": "^4.17.20",
     "prettier": "^2.2.1",
     "sass": "^1.32.2",
     "stylelint": "^13.8.0",

@@ -20,7 +20,7 @@ export default defineConfig({
   // },
   optimizeDeps: {
     // include: ['axios', 'nprogress', 'mockjs']
-    include: ['@ant-design/icons-vue']
+    include: ['@ant-design/icons-vue', 'lodash', 'axios']
   },
   css: {
     preprocessorOptions: {
@@ -30,16 +30,22 @@ export default defineConfig({
     }
   },
   // 代理
-  // server: {
-  //   proxy: {
-  //     '/api': {
-  //       target: 'http://localhost:3001/',
-  //       changeOrigin: true,
-  //       rewrite: path => path.replace(/^\/api/, ''),
-  //     },
-  //   },
-  //   port: 8080, // 服务端口
-  // },
+  server: {
+    proxy: {
+      '/api': {
+        target: 'http://localhost:3001/',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, ''),
+      },
+      // GitHub api测试
+      '/users': {
+        target: 'https://github.com/',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/users/, ''),
+      },
+    },
+    // port: 8080, // 服务端口
+  },
   build: {
     // sourcemap: true,
     // cssCodeSplit: true

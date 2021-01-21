@@ -20,7 +20,7 @@ export default defineConfig({
   // },
   optimizeDeps: {
     // include: ['axios', 'nprogress', 'mockjs']
-    include: ['@ant-design/icons-vue', 'lodash', 'axios']
+    include: ['@ant-design/icons-vue', 'lodash', 'web-vitals', 'axios']
   },
   css: {
     preprocessorOptions: {

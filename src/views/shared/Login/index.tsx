@@ -2,6 +2,8 @@ import { defineComponent, reactive } from 'vue'
 import { useRouter } from 'vue-router'
 import { Form, Input, Button, message } from 'ant-design-vue'
 import { UserOutlined, LockOutlined } from '@ant-design/icons-vue'
+// import { testApi } from '../../../api/test'
+// import { loginApi } from '../../../api/user'
 import './index.scss'
 
 /** 登陆接口 */
@@ -38,6 +40,14 @@ export default defineComponent({
       //     loginState.password = ''
       //     loginState.type = false
       // }
+
+      // const params = {
+      //   user: 'admin',
+      //   username: 'admin',
+      //   password: 'admin_123'
+      // }
+      // const res = await testApi(params)
+      // const res = await loginApi(params)
 
       if (loginState.username === 'admin' && loginState.password === '123456') {
         message.success('登录成功，即将进入系统内部')

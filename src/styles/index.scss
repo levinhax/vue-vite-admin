@@ -7,3 +7,20 @@
   color: $injectedColor;
   // margin-top: 60px;
 }
+
+/* 滚动条样式修改，有需要滚动条的加 scrollbar class 即可 */
+.scrollbar {
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgba(240, 242, 245, 1);
+
+  /* background-color: rgba(237, 239, 245, 1); */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: rgba(209, 216, 229, 1);
+}
